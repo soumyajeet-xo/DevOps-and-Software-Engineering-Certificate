@@ -45,9 +45,24 @@ print(sys.version)
 - String is a sequence of characters
 - ordered sequence
 - 0 1 2 3 .. based indexing
-- ... -3, -2, -1 based indexing (first element is negative length of the string)
-- 
-
+- ... -3, -2, -1 based indexing (the first element is the negative length of the string)
+- len('dajksbd')
+- name="Michael jackson"
+- Name[::2]:"McalJcsn"  (every 2nd variable)
+- string stride(increment value) and slicing
+- Name[0:5:2] (every 2nd value up to index 4) [starting: exclusive ending: increment value]
+- + for concatination
+- 3*'Hello'
+- string is immutable
+- \ represents the beginning of the escape sequence
+- \n (output in a new line)
+- \t (tab space)
+- \\ prints a backslash
+- r"Hello \ haha" (prints as it is ) (r denotes raw string)
+- String Methods (Sequence method and string methods)
+- A.upper() (converts all to Uppercase)
+- B= A.replace('Michael','Janet')   ~ replace substring in a string
+- A.find('el')  ~~ finds substring starting index (output -1 if not found)
 
 
 
