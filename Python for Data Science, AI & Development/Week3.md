@@ -258,11 +258,92 @@ finally:
 
 ```
 
+## Objects and Classes
+- int, float, string, list, dictionary, boolean
+- every object has type, internal rep, set of methods to onteract
+- object is an instance of a particular type
+- A.reverse() ~~ A is a list
+- Crete own type or class
+- class contains data attribute and methods
+```
+class Circle(object):
+#class def     class parent
+
+  def __init__(self, radius, color):   ##init: constructor. That tells python, we are creating a class(self is the newly created instance and rest and attributes)
+    self.radius=radius;
+    self.color=color;
+
+  def add_radius(self,r):
+    self.radius=self.radius+r
+
+RedCircle = Circle(10,"red") ~~ object creation
+RedCircle.radius ## return 10
+RedCircle.radius=20 ## changes the radius 
+
+-----
+
+class Circle(object):
+    def __init__(self,radius,color):
+        self.radius=radius;
+        self.color=color;
+    
+    def addCircle(self,r):
+        self.radius=self.radius+r
+        
+Redcircle=Circle(10,'blue')
+Redcircle.addCircle(10)
+Redcircle.radius
+
+
+## Output : 20
+
+```
+
+- methods to change data attribute
+- .drawCircle()
+- .drawRectangle()
+- dir(nameoftheobject): ~~ list of the object data attributes
+```
+# Import the library
+
+import matplotlib.pyplot as plt
+%matplotlib inline  
+-------
+
+class Vehicle:
+    color = "white"
+
+    def __init__(self, max_speed, mileage):
+        self.max_speed = max_speed
+        self.mileage = mileage
+        self.seating_capacity = None
+
+    def assign_seating_capacity(self, seating_capacity):
+        self.seating_capacity = seating_capacity
+
+    def display_properties(self):
+        print("Properties of the Vehicle:")
+        print("Color:", self.color)
+        print("Maximum Speed:", self.max_speed)
+        print("Mileage:", self.mileage)
+        print("Seating Capacity:", self.seating_capacity)
+
+# Creating objects of the Vehicle class
+vehicle1 = Vehicle(200, 50000)
+vehicle1.assign_seating_capacity(5)
+vehicle1.display_properties()
+
+vehicle2 = Vehicle(180, 75000)
+vehicle2.assign_seating_capacity(4)
+vehicle2.display_properties()
 
 
 
+```
 
 
+## WEEK 3 DONE 
+~~ Soumyajeet Bal
 
 
 
