@@ -11,5 +11,8 @@
 - HTML web scraping
 - basic HTML composition and HTML trees, table and hierarchical system
 
-## Webscraping
-- automatically extract information of website
+## Web scraping
+- automatically extract information from the website
+- bs4 and beautiful soup
+- var html = webpage store as a string
+
