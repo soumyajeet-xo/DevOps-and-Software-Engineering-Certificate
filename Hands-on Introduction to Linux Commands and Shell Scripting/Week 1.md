@@ -69,4 +69,35 @@ Module 4. Final Project and Final Exam
 https://www.coursera.org/learn/hands-on-introduction-to-linux-commands-and-shell-scripting/ungradedWidget/8IMo5/reading-browsing-directories-with-the-linux-terminal 
 
 
+## Creating and Editing Text Files
+- popular text editor in linux
+- command line text editors and gui text editors
+- gnu nano, vi, vim
+- gedit - integrated file browser, syntax color coding
+- emacs
+- nano <filename>
+- vim <filename> -- insert mode and command mode
+- :sav example.txt to create a file and write the buffer to the file
+- :w to write the buffer to the file without exiting
+- :q to quit vim session
+- :q! to quit without saving
 
+- Use the sudo command to enable access to "super-user" system administration tools
+- Use the apt system administration command to update and install two popular packages for text editing: nano and Vim
+- Create and edit files using nano
+- Create and edit files using Vim
+- sudo apt update --  update your package list index
+- sudo apt upgrade nano -- 
+
+## Installing Software and Updates
+- package and package managers
+- Dev and RPM packages
+- .deb for debian based
+- .rpm for red hat based like fedora
+- rpm to deb --- alien <package_name>.rpm
+- deb to rpm --- alien -r <package_name>.deb
+- apt is a linux tool to update deb based linux system
+- yum is a command to update rmp based system
+- sudo apt update package.name
+- pip install pandas -- pip package manager to check and install
+- 
