@@ -41,10 +41,37 @@
 - paste 
 - paste first.txt last.txt yob.txt (merge)
 - paste -d ',' first.txt last.txt yob.txt
+
+## Networking Commands
+-  hostname - (returns hostname of the machine)
+-  hostname -i (IP address)
+-  hostname -s (drop suffix)
+-  ifconfig (display info regarding communication)
+-  ifconfig eth0 (displays internet address, number of packets,drop packets, etc)
+-  ping (send icmp packets listen for a response and prints the result)
+-  ping www.google.com
+-  ping -c 5 google.com
+-  curl www.google.com (returns the HTML of the landing page)(transfer data to and from URL)
+-  curl www.google.com -o  google.txt
+-  head -n 1 google.txt
+-  wget(web get) Download files from a url
+-  wget example.com/path/test.txt
+
+File Archiving and Compression Commands
+- Archiving is the process of storing information that are not regularly  used but want to be preserved
+- archiving make the collection more portable  
+- File compression is the process of reducing the size of the file by taking advantage of redundancy
+- ls -r (recursive list)
+- tar -cf notes.tar notes (archive)
+- tar -czf notes.tar.gz notes (archive + compress)
+- tar -tf notes.tar (all the directories and files in the tar)
+- tar -xf notes.tar notes (dearchive)
+- tar -xzf notes.atr.gz notes (decopress)
+- zip -r notes.zip notes
 - 
--  
 - 
 - 
+-   
 
 
 
