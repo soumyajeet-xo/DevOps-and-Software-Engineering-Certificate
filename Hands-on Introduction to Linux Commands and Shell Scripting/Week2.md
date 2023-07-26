@@ -26,9 +26,9 @@
 - head -n 3
 - tail (last N lines)
 - wc (word count, line count, character count)
-- wc -l 
-- wc -w
-- wc -c
+- wc -l (number of lines)
+- wc -w (number of words)
+- wc -c (number of character)
 
 ## Useful Commands for Wrangling Text Files
 - sort pets.txt
@@ -68,10 +68,8 @@ File Archiving and Compression Commands
 - tar -xf notes.tar notes (dearchive)
 - tar -xzf notes.atr.gz notes (decopress)
 - zip -r notes.zip notes
-- 
-- 
-- 
--   
+- unzip
+- more in pdf
 
 
 
