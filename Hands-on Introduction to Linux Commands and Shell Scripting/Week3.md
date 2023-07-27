@@ -45,8 +45,76 @@ $ curl -s --location --request GET https://api.coinstats.app/public/v1/coins/bit
 57907.78008618953
 ```
 ## Useful Features of the Bash Shell
-- metacharacter is unique character
+- metacharacter are special character
 - # - comment
-- ; - command separator in same line
-- 
-- 
+- ; - command separator in the same line
+- Quoting - specifies whether the shell should interpret special characters as metacharacters or simply ignore them.
+- \ - escape sequence
+- " " will interpret literally but evaluate metacharacter
+- ' ' will interpret all as literal 
+- I/O redirection
+- '>' - redirect output to a file or overwrite if already exists
+- '>>' - redirect output to a file (append without overwrite)
+- 2> - redirects error message to a file
+- 2>> - append the error message
+- <
+- Command substitution to capture output of a command
+- here=$(pwd)
+- Command line arguments
+- ./mybash.sh arg1 arg2 (arguments passed to mybash.sh)
+- Batch vs Concurrent mode
+- command1; command2
+- Concurrent mode command runs in parallel
+- command1 & command2
+- declare -a empty_array
+- my_array=(1 2 "three" "four" 5)
+- echo ${my_array[@]}  -- -- print all element of the array
+- echo ${my_array[2]}
+LOOP
+```
+#!/bin/usr/env bash
+
+n=7
+for (( i=1 ; i<=$n ; i++ )); 
+do
+    echo $i
+done
+-----
+
+#!/bin/usr/env bash
+
+s=("football" "cricket" "hockey") 
+for n in ${s[@]}; 
+do
+    echo $n
+done
+-----
+
+#!/bin/usr/env bash
+
+for n in {1..5..2}; 
+do
+    echo $n
+done
+-----
+
+```
+## Scheduling Jobs using Cron
+- schedule using cron
+- crontab -e
+- crontab -l | tail -6
+- Cron is a system daemon used to execute desired tasks in the background at designated times.
+- A crontab file is a simple text file containing a list of commands meant to be run at specified times.
+- It is edited using the crontab command.
+- "* * * * *" date >> /tmp/everymin.txt
+- crontab -r (remove current crontab)
+
+
+
+
+
+
+
+
+
+
